@@ -24,7 +24,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return "Flask Vercel Example - Hello World", 200
+    return "Flask Vercel Example - Hello World | " + str(torch.__version__), 200
 
 
 @app.errorhandler(404)
